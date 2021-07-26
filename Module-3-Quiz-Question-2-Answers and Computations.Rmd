@@ -1,0 +1,87 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Question 2
+
+**Brand A gasoline was used in 16 similar automobiles under identical conditions. The corresponding sample of 16 values (miles per gallon) had mean 19.6 and standard deviation 0.4. Under the same conditions, high-power brand B gasoline gave a sample of 16 values with mean 20.2 and standard deviation 0.6. Is the mileage of B significantly better than that of A? Assume normality. Test the hypothesis using both P-value and fixed significance level with α=0.05 approaches (if possible).**
+
+<img src="https://www.spectrumautogilbert.com/Files/Blog/images/gasoline.jpg"/>
+
+Image Source: <https://www.spectrumautogilbert.com/blog/proper-grade-of-gas--standard--super--plus-or-premium>
+
+- - -
+
+Given Values:
+
+$n = n_1 = n_2 = 16$
+
+$\bar{x}_1 = 19.6$
+
+$\bar{x}_2 = 20.2$
+
+$\sigma_1 = 0.4$
+
+$\sigma_2 = 0.6$
+
+$\alpha = 0.05$
+
+- - -
+
+$$
+H_0: \mu_2 - \mu_1 = \Delta_0
+$$
+
+$$
+H_1: \mu_1 < \mu_2
+$$
+
+Reject $H_0: \mu_1 = \mu_2$ if the *P*-value is less than 0.05.
+
+- - -
+
+$$
+z_0 = \frac{\bar{x}_1 - \bar{x}_2 - 0}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}}
+$$
+
+Add the appropriate values:
+
+$$
+z_0 = \frac{19.6 - 20.2 - 0}{\sqrt{\frac{0.4^2}{16} + \frac{0.6^2}{16}}} = -3.33
+$$
+
+Find $\Phi(-3.33)$ in the Z-Table:
+
+<img src="https://www.ztable.net/wp-content/uploads/2018/11/negativeztable.png"/>
+
+Image Source: <https://www.ztable.net/>
+
+$$
+\Phi(-3.33) = 0.00043
+$$
+
+$$
+P = 1- \Phi(-3.33) = 1 - 0.00043
+$$
+
+$$
+P = 0.99957
+$$
+
+- - -
+
+$$
+0.99957 > 0.05
+$$
+
+$$
+P_{value} > \alpha
+$$
+
+*Therefore we accept* $H_0$
+
+- - -
+
+## Conclusion Drawn from Results
+
+Based on the testing done, it was proven that the mileage of brand B is *not* significantly higher than that of brand A.
